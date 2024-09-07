@@ -7,7 +7,7 @@ This lab is divided into four parts and should take approximately two hours to c
 
 ## Prerequisites:
 * Installation of necessary Python modules
-    * You can install the necessary modules either through your IDE's terminal as indicated below, or by installing each module as depicted in the linked video.
+    * You can install the necessary modules either through your IDE's terminal as indicated below, or by installing each module as depicted in the [linked video](https://redwoods.us-west-2.instructuremedia.com/embed/fe6c9462-136a-423a-bf5d-32eba7128321).
       ```shell
       pip install zeromq-pyre
       ```
@@ -122,6 +122,7 @@ In this final part, you will focus on testing and debugging your chat applicatio
 * Verify that Pyre is installed correctly by running `pip list | grep pyre` in your terminal or simply checking your installed modules in your IDE settings.
 
 ## Part 5: Pushing to GitHub
+[Review video of this process](https://redwoods.us-west-2.instructuremedia.com/embed/72299bfd-8420-4ad0-8af5-18fb8e32e50a)
 1. **Create a GitHub Repository:**
    * Log in to your GitHub account.
    * Create a new repository with a suitable name (e.g., "python_lab3").
