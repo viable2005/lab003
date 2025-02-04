@@ -5,9 +5,11 @@ from pyre import zhelper
 import zmq
 import uuid
 import json
+import time
 
 def get_peer_node(username):
     n = Pyre(username)
+    n.set_header("CHAT", "1.0")
     #n.set_header("CHAT_Header1","example header1")
     #n.set_header("CHAT_Header2","example header2")
     n.start()
@@ -15,6 +17,7 @@ def get_peer_node(username):
 
 def join_group(node, group):
     node.join(group)
+    time.sleep( 1 )  # Give some time for the join to propagate
     print(f"Joined group: {group}")
 
 def chat_task(ctx, pipe, n, group):
